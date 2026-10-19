@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Home Health development documentation by Dino Juratić: privacy and terms."><title>Privacy Policy | Home Health</title><link rel="stylesheet" href="styles.css"></head>
+<body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="index.html">Home Health</a><nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header><main id="main"><p class="eyebrow">Project documentation</p><h1>Privacy Policy</h1><p class="meta">Development version · Updated 19 October 2026</p>
+<p class="notice"><strong>Development notice.</strong> Home Health is under development. This document describes the intended data handling for the planned application. It will be checked against the implemented version before testing with other users or public release.</p>
+<h2>1. Developer and contact</h2>
+<p>Home Health is developed by <strong>Dino Juratić, Croatia</strong>. Dino Juratić is the contact responsible for the application's data processing and this notice. Contact: <a href="mailto:djuratic_projects@outlook.com">djuratic_projects@outlook.com</a>.</p>
+<p>Android package: <code>hr.djuratic.homehealth</code>.</p>
+<h2>2. Purpose and sources</h2>
+<p>Home Health is planned as an Android application for a personal health and fitness dashboard and a manual intake diary. Optional integrations will read authorized Huawei Health records, copy supported records to Health Connect, and forward selected Health Connect data to the user's own Home Assistant installation through Health Data Receiver.</p>
+<h2>3. Data used</h2>
+<p>Only data supported by the implemented features, available from the source and covered by platform permissions and the user's choices will be processed. Categories may include:</p>
+<ul>
+<li>Steps, distance, elevation, energy expenditure, activity intensity, active hours, daily summaries, exercise goals and achievements.</li>
+<li>Workout records, workout details, recorded workout routes and fitness indicators. Workout-route access does not itself mean continuous tracking of the phone's location.</li>
+<li>Weight and body composition, heart rate, stress, sleep, blood glucose, blood pressure, oxygen saturation, temperature, existing ECG-related records and alerts, maximum oxygen uptake (VO₂max), and nutrition records.</li>
+<li>Manually entered water, coffee, medication and supplement records.</li>
+<li>Timestamps, units, source identifiers, synchronization settings and authorization credentials required for enabled integrations.</li>
+</ul>
+<p>An initial historical import may cover up to one year where approved and explicitly selected. An approved permission does not guarantee that every device or account provides records in that category. Categories without a supported Health Connect mapping will not be represented as an unrelated data type.</p>
+<h2>4. Purposes, consent and controls</h2>
+<p>Records will be used to display personal history and trends, maintain the diary and perform transfers selected by the user. For the planned health-data features, processing will be based on explicit, informed consent and relevant platform permissions. Accepting the terms of use alone will not authorize access to health data.</p>
+<p>The <strong>Huawei Health → Health Connect</strong> module and the <strong>Health Connect → Home Assistant</strong> module will have independent enable/disable controls. The user will choose supported categories and approve each integration. Disabling one module will not automatically disable the other. The planned Huawei integration is read-only.</p>
+<p>Declining optional permissions will leave the corresponding features unavailable. Consent may be withdrawn and platform access revoked. Withdrawal will not affect the lawfulness of processing performed before withdrawal.</p>
+<h2>5. Storage, destinations and recipients</h2>
+<p>The planned design stores app records and settings on the user's Android device. Enabling a transfer creates additional copies in Health Connect and/or the user-configured Health Data Receiver and Home Assistant installation.</p>
+<p>Other applications may access Health Connect records according to permissions managed through Health Connect. Access to the receiving server and backups depends on its configuration. No developer-operated central health-data repository, advertising service, sale of health data or advertising profiling is planned.</p>
+<p>Huawei services, Google/Android services, and hosting or remote-access services selected by the user operate under their applicable terms and privacy notices. The final application notice will identify any additional service providers and international transfers introduced by the implementation before that processing begins.</p>
+<h2>6. Retention and deletion</h2>
+<p>The intended retention model is to keep personal history until the user deletes it or clears the application's local data. Local deletion controls, credential removal and backup behaviour will be documented and verified before release.</p>
+<p><strong>Turning synchronization off stops future transfers; it does not delete existing records.</strong> Revoking permissions or uninstalling Home Health does not automatically remove copies already held in Health Connect, Huawei Health, Home Assistant, Health Data Receiver or their backups. Those copies must be managed at the relevant destination.</p>
+<h2>7. Security and support correspondence</h2>
+<p>Protected credential storage, authenticated connections and encrypted network transport are planned safeguards. Their implementation must be verified before release; this development notice does not certify that those controls have already been tested.</p>
+<p>If you contact the developer, your email address and the information you voluntarily provide are used to respond to and resolve your request. This processing serves the legitimate interest of providing support. Correspondence is retained while needed to resolve and follow up the request, and longer only where necessary to meet a legal obligation or establish, exercise or defend legal claims. Unneeded correspondence should be deleted when that purpose ends. Email is handled through the developer's Outlook mailbox, subject to <a href="https://privacy.microsoft.com/en-us/privacystatement">Microsoft's privacy statement</a>.</p>
+<p>Please do not send passwords, authorization tokens or unnecessary health records. Do not submit personal health data in public GitHub issues.</p>
+<h2>8. This documentation website</h2>
+<p>These pages contain no application health records and include no developer-added analytics, advertising scripts, cookies or forms. They are hosted on GitHub Pages. GitHub may process technical request information, including IP addresses, to provide and secure its services. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> for its processing, retention and international-transfer information.</p>
+<h2>9. Your rights</h2>
+<p>Where applicable, you may request access, correction, erasure, restriction or portability of your personal data, object to processing based on legitimate interests, and withdraw consent. Contact <a href="mailto:djuratic_projects@outlook.com">djuratic_projects@outlook.com</a> to make a request.</p>
+<p>The developer cannot directly access or erase records held only on your device or server. Assistance will explain available local controls. You may also complain to the competent data protection authority, including the Croatian Personal Data Protection Agency, <a href="https://azop.hr/">AZOP</a>.</p>
+<h2>10. Intended audience and changes</h2>
+<p>Initial testing is intended for an adult developer using their own accounts and devices. The application is not currently offered as a service for children.</p>
+<p>This notice will be updated when implementation or data handling changes. Material changes will be communicated before new processing begins, with renewed consent where required.</p></main><footer><p>Home Health · Dino Juratić · Croatia</p><p><a href="mailto:djuratic_projects@outlook.com">djuratic_projects@outlook.com</a></p></footer></body></html>
